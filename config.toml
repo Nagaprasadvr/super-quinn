@@ -1,0 +1,25 @@
+# Server configuration
+[server]
+# Port number the server listens on
+port = 4433
+
+# Host address of the server
+host = "127.0.0.1"
+
+# Path to the TLS certificate file used by the server
+tls_cert_path = "keys/server/rsa-cert.pem"
+
+# Path to the TLS private key file used by the server
+tls_pvt_key_path = "keys/server/rsa-key.pem"
+
+
+# Client configuration
+[client]
+# Port number the client listens on
+port = 4434
+
+# Host address the client connects to
+host = "127.0.0.1"
+
+# Path to the allowed server certificates file used by the client
+tls_allowed_servers_certs_path = "keys/client/tls-allowed-servers-certs.pem"
